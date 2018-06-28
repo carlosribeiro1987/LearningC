@@ -3,7 +3,7 @@
 int main() {
 int i;
 int str[] = {'s','o','u',' ','u','m',' ','v','e','t','o','r'};
-for (i = 0; i < sizeof(int); i++){
+for (i = 0; i < sizeof(str) / sizeof(int); i++){
 fprintf(stdout, "%p \t\t| %c\n", &str[i], (char)str[i]);
 }
 return 0;
